@@ -1,11 +1,15 @@
 package com.juniverse.math;
 
+
+import java.util.logging.Logger;
 /**
  * Compara Haversine y Karney con las distancias Ciudad de México – Guadalajara y Ciudad de México – Nueva York.
  *
  * @author ajuar
  */
 public class Main {
+    private static final Logger LOGGER = AppLogger.get(Main.class);
+
 
     /**
      * Punto de entrada.
@@ -23,8 +27,8 @@ public class Main {
 
         double distance = haversine.calculateDistance(lat1, lon1, lat2, lon2);
 
-        System.out.printf("Distancia entre Ciudad de Mexico y Guadalajara:\n");
-        System.out.printf("%.2f kilometros%n", distance);
+        LOGGER.info(String.format("Distancia entre Ciudad de Mexico y Guadalajara:\n"));
+        LOGGER.info(String.format("%.2f kilometros", distance));
 
         lat1 = 19.4326;
         lon1 = -99.1332;
@@ -32,8 +36,8 @@ public class Main {
         lon2 = -74.0060;
 
         distance = haversine.calculateDistance(lat1, lon1, lat2, lon2);
-        System.out.printf("Distancia entre Ciudad de Mexico y Nueva York:\n");
-        System.out.printf("%.2f kilometros%n", distance);
+        LOGGER.info(String.format("Distancia entre Ciudad de Mexico y Nueva York:\n"));
+        LOGGER.info(String.format("%.2f kilometros", distance));
 
         lat1 = 19.4326;
         lon1 = -99.1332;
@@ -41,8 +45,8 @@ public class Main {
         lon2 = -74.0060;
 
         distance = karney.calculateDistance(lat1, lon1, lat2, lon2);
-        System.out.printf("Distancia entre Ciudad de Mexico y Nueva York:\n");
-        System.out.printf("%.2f kilometros%n", distance);
+        LOGGER.info(String.format("Distancia entre Ciudad de Mexico y Nueva York:\n"));
+        LOGGER.info(String.format("%.2f kilometros", distance));
 
         lat1 = 19.4326; // Ciudad de México
         lon1 = -99.1332;
@@ -51,7 +55,7 @@ public class Main {
 
         distance = karney.calculateDistance(lat1, lon1, lat2, lon2);
 
-        System.out.printf("Distancia entre Ciudad de Mexico y Guadalajara:\n");
-        System.out.printf("%.2f kilometros%n", distance);
+        LOGGER.info(String.format("Distancia entre Ciudad de Mexico y Guadalajara:\n"));
+        LOGGER.info(String.format("%.2f kilometros", distance));
     }
 }
