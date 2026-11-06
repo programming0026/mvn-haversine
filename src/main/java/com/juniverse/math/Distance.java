@@ -3,7 +3,7 @@ package com.juniverse.math;
 /**
  * Cálculo de la distancia entre dos coordenadas geográficas.
  *
- * @author ajuar
+ * @author Java Universe
  */
 public interface Distance {
 

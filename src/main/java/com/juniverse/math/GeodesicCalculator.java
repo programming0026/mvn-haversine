@@ -6,7 +6,7 @@ import net.sf.geographiclib.GeodesicData;
 /**
  * Distancia sobre el elipsoide WGS84 con el algoritmo de Karney (GeographicLib); más precisa que Haversine.
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class GeodesicCalculator implements Distance {
 

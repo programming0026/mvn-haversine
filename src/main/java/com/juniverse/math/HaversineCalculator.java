@@ -3,7 +3,7 @@ package com.juniverse.math;
 /**
  * Distancia sobre una esfera de 6371 km con la fórmula de Haversine. Error típico de hasta ~0.5 %.
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class HaversineCalculator implements Distance {
 

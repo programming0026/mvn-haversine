@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 /**
  * Compara Haversine y Karney con las distancias Ciudad de México – Guadalajara y Ciudad de México – Nueva York.
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class Main {
     private static final Logger LOGGER = AppLogger.get(Main.class);
